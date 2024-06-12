@@ -1,0 +1,25 @@
+{
+  "name": "location-proof-protocol",
+  "version": "1.0.0",
+  "description": "Core EAS schema registration for the Location Proof Protocol",
+  "scripts": {
+    "start": "node index.js",
+    "register-schema:development": "NODE_ENV=development node schema/register.js",
+    "register-schema:testing": "NODE_ENV=testing node schema/register.js",
+    "register-schema:production": "NODE_ENV=production node schema/register.js",
+    "register-schema:local": "NODE_ENV=local babel-node schema/register.js"
+  },
+  "author": "Astral Protocol",
+  "dependencies": {
+    "@ethereum-attestation-service/eas-sdk": "^2.2.0",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/node": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "hardhat": "^2.22.5"
+  }
+}
